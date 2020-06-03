@@ -8,6 +8,7 @@ set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE) # don't build the supplied examples
 set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) # or games
 
 add_subdirectory(libs/raylib)
+include_directories(libs/)
 
-add_executable(raylib_template src/main.c)
+add_executable(raylib_template src/main.c libs/libco.c)
 target_link_libraries(raylib_template PRIVATE raylib)
