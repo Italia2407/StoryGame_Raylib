@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(raylib_template C)
+project(raylib_story_game C)
 
 set(CMAKE_C_STANDARD 99)
 
@@ -10,5 +10,5 @@ set(BUILD_GAMES    OFF CACHE BOOL "" FORCE) # or games
 add_subdirectory(libs/raylib)
 include_directories(libs/)
 
-add_executable(raylib_template src/main.c libs/libco.c)
-target_link_libraries(raylib_template PRIVATE raylib)
+add_executable(raylib_story_game src/main.c libs/libco.c)
+target_link_libraries(raylib_story_game PRIVATE raylib)
